@@ -1,0 +1,118 @@
+html{
+    font-family: "Fira Sans", sans-serif;
+    scroll-behavior: smooth;
+
+}
+
+:root{
+    /*Light Mode*/
+    --bg-color: #EAC7C7;
+    --primary-color: #A0C3D2;
+    --secondary-color: #F7F5EB;
+    --text-color: rgb(72, 71, 71);
+    --button-color: black;
+}
+
+.darkmode{
+    /*Dark Mode*/
+    --bg-color: #27374D;
+    --primary-color: #526D82;
+    --secondary-color: #9DB2BF;
+    --text-color: #f9fafb;
+    --button-color: black;
+}
+
+button{
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#theme-switch svg{
+    transition: opacity 0.3s ease;
+    position: absolute;
+    fill: var(--button-color);
+}
+#theme-switch svg:last-child{
+    display: none;
+}
+.darkmode #theme-switch svg:first-child{
+    display: none;
+}
+
+.darkmode #theme-switch svg:last-child{
+    display: block;
+}
+
+body{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.Desc-block{
+    height: 710px;
+    width: auto;
+    background-color: var(--primary-color);
+    display: flex;
+    margin: 10px;
+    border-radius: 25px;
+}
+
+.sidebar{
+    background-color: var(--secondary-color);
+    width: 25vw;
+    margin: 7px;
+    border-radius: 25px;
+
+}
+
+.sidebar p{
+    padding: 323px 125px;
+    font-size: large;
+    font-weight: 700;
+
+}
+
+.cnt-box{
+    background-color: var(--secondary-color);
+    width: 100%;
+    margin: 7px;
+    border-radius: 25px;
+}
+
+.hello{
+    font-size: 55px;
+    text-align: center;
+}
+
+.name{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.about_studies{
+    font-weight: 500;
+    padding: 60px 0px;
+    font-size: 30px;
+}
+
+.moreabout{
+    font-size: 30px;
+}
+
+#edu-info p{
+    padding: 25px 0px;
+}
+
+.int-block p{
+    background-color: rgb(250, 213, 157);
+    border-radius: 50px;
+    display: inline-block;
+    border-style: ridge;
+    padding: 3px 3px;
+    font-size: large;
+}
